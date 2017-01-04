@@ -3,20 +3,23 @@
     max-width: 220px;
 }
 
-.bg-yellow {
-    background-color: yellow;
-}
-.bg-green {
-    background-color: green;
-}
-.bg-grey {
-    background-color: grey;
-}
-
 .vertical-middle {
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .bottom-padding {
     padding-bottom: 50px;
+}
+
+#parent-social {
+    display: table;
+}
+
+#child-social {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#social-icons {
+    font-size: 48px;
 }
