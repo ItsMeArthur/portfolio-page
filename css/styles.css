@@ -1,0 +1,22 @@
+#profile-pic {
+    width: 100%;
+    max-width: 220px;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+.bg-green {
+    background-color: green;
+}
+.bg-grey {
+    background-color: grey;
+}
+
+.vertical-middle {
+    vertical-align: middle;
+}
+
+.bottom-padding {
+    padding-bottom: 50px;
+}
