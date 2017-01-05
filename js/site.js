@@ -12,6 +12,5 @@ function equalizeCols(clasName) {
 
 
 $(document).ready(function(){
-    equalizeCols(".contact-col");
-    equalizeCols(".about-col");
+    equalizeCols(".contact-col");   
 });

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Welcome to my portfolio!</title>
+	<title>It's me,	 Arthur!</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 	<script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
@@ -11,35 +11,36 @@
 	<script type="text/javascript" src="./js/site.js"></script>
 </head>
 <body>
+
 	<div class="container">
-        
         <!-- Begining of the navigation bar  -->
-        <nav class="navbar navbar-default">
-                <!-- Brand and toggle get grouped for better mobile display -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-area" aria-expanded="false">
-                        <span class="sr-only">Toggle Navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Brand</a>
+                    <a  href="#"><img src="./img/logo.png" alt="Logo"></a>
                 </div>	
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-area">
-                <div>
                     <ul class="nav navbar-nav pull-right">
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Portfolio">Portfolio</a></li>
-                        <li><a href="#Contact">Contact</a></li>				
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#portfolio-section">Portfolio</a></li>
+                        <li><a href="#contact-section">Contact</a></li>				
                     </ul>
-                </div>					
-        </nav>
-        <!-- Ending of navigation bar -->
+                </div>
+			</div>					
+        </nav> <!-- Ending of navigation bar -->
+        
         
         <!-- Beginning of About section -->
-		<div class="row bottom-padding">
+		<a id="about-section" class="anchor"></a>
+		<div class="row bottom-padding" id="about">
 			<div class="col-md-8 col-sm-8 about-col">
 				<h1 class="text-center">Fusce lobortis felis eu risus pharetra elementum.</h1>
 				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed cursus est, sit amet molestie libero. Etiam finibus justo ac nunc egestas fringilla. Nulla a neque ante. Nullam lobortis justo interdum turpis finibus, volutpat viverra arcu hendrerit. Nam id ligula in orci consequat volutpat. Fusce eu nisi sit amet nisl pellentesque commodo at vel massa. Suspendisse eget sem consectetur, pretium diam eu, viverra ante. Morbi volutpat, velit vitae facilisis consectetur, justo ante auctor magna, nec faucibus erat lacus quis nulla.</p>
@@ -51,14 +52,14 @@
 				</blockquote>
 			</div>
 			<div class="col-md-4 col-sm-4 about-col text-center">
-				<img src="./img/me.jpg" id="profile-pic" class="img-circle center-block" alt="Arthur de Andrade">
-				<p>Sed nec interdum</p>
-				<p>Nulla eget ex lacinia, scelerisque purus</p>
+				<img src="./img/me.png" id="profile-pic" class="img-circle center-block img-portrait" alt="Arthur de Andrade">
+				<p class="custom-lead">Arthur D. Andrade</p>
+				<p>Programmer / Software Developer</p>
 			</div>
-		</div>
-        <!-- Beginning of About section -->
+		</div> <!-- Beginning of About section -->
+    
         
-        <!-- Beginning of portfolio carousel -->
+        <!-- Beginning of carousel -->
 		<div class="row bottom-padding">
 			<div class="col-md-12">
 				<div id="home-carousel" class="carousel slide" data-ride="carousel">
@@ -73,36 +74,35 @@
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
 							<img src="./img/cr1.png" class="img-responsive">
-							<div class="carousel-caption">
+							<div class="carousel-caption primary-lead">
 								<h2>In hac habitasse platea dictumst.</h2>
 								<p>Donec maximus diam nec elit scelerisque dictum.</p>
 							</div>
 						</div>
 						<div class="item">
 							<img src="./img/cr2.png" class="img-responsive">
-							<div class="carousel-caption">
+							<div class="carousel-caption primary-lead">
 								<h2>Donec imperdiet erat a nisi.</h2>
 								<p>In ut imperdiet augue. Sed lacinia, sem non tempor lobortis.</p>
 							</div>
 						</div>
 						<div class="item">
 							<img src="./img/cr3.png" class="img-responsive">
-							<div class="carousel-caption">
+							<div class="carousel-caption primary-lead">
 								<h2>In gravida, nunc eu cursus.</h2>
 								<p>Sed ut arcu vitae felis commodo dignissim ac vel massa.z</p>
 							</div>
 						</div>
-						
 					</div>
 
 				</div>
 			</div>
-		</div>	
-        <!-- Ending of porfolio carousel -->
-
-		<!-- Beginning of thumbnails section -->
+		</div> <!-- Ending of carousel -->
+        
+		<!-- Beginning of portfolio section -->
+		<a id="portfolio-section" class="anchor"></a>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12" >
 
 				<div class="text-center">
 				<h2>Sed tincidunt metus facilisis nulla vulputate vehicula.</h2>
@@ -111,9 +111,10 @@
 
 				<!-- Beginning of portfolio thumbnails -->
 				<div class="row">
+					
 					<div class="col-md-3 col-sm-4  col-xs-6">
 						<div class="thumbnail">
-							<img src="./img/thumbnail.svg" alt="Thumbnail Image">
+							<img src="./img/pf01.png" alt="Thumbnail Image">
 							<div class="caption">
 								<h3>Duis et auctor lectus</h3>
 								<p>Sed lacinia, sem non tempor lobortis, neque dui commodo nulla, id maximus lorem sem a augue.</p>
@@ -124,7 +125,7 @@
 
 					<div class="col-md-3 col-sm-4  col-xs-6">
 						<div class="thumbnail">
-							<img src="./img/thumbnail.svg" alt="Thumbnail Image">
+							<img src="./img/pf02.png" alt="Thumbnail Image">
 							<div class="caption">
 								<h3>Duis et auctor lectus</h3>
 								<p>Sed lacinia, sem non tempor lobortis, neque dui commodo nulla, id maximus lorem sem a augue.</p>
@@ -135,7 +136,7 @@
 
 					<div class="col-md-3 col-sm-4  col-xs-6">
 						<div class="thumbnail">
-							<img src="./img/thumbnail.svg" alt="Thumbnail Image">
+							<img src="./img/pf03.png" alt="Thumbnail Image">
 							<div class="caption">
 								<h3>Duis et auctor lectus</h3>
 								<p>Sed lacinia, sem non tempor lobortis, neque dui commodo nulla, id maximus lorem sem a augue.</p>
@@ -146,7 +147,7 @@
 
 					<div class="col-md-3 col-sm-4  col-xs-6">
 						<div class="thumbnail">
-							<img src="./img/thumbnail.svg" alt="Thumbnail Image">
+							<img src="./img/pf04.png" alt="Thumbnail Image">
 							<div class="caption">
 								<h3>Duis et auctor lectus</h3>
 								<p>Sed lacinia, sem non tempor lobortis, neque dui commodo nulla, id maximus lorem sem a augue.</p>
@@ -160,60 +161,64 @@
 
 				<div class="row">
 					<div class="col-md-12">
-						<div class="alert alert-success text-center center-block">
+						<div class="alert alert-custom text-center center-block">
 							<p>Quisque a velit convallis, tincidunt mi eget, malesuada lacus. Sed id turpis non nulla tincidunt lacinia. </p>
 							<a href="#"> <button class="btn btn-primary btn-large">Full Portfolio</button> </a>
 						</div>
 					</div>
 				</div>
-
 			</div>
-			<!-- Ending of thumbnails section -->
+		</div> <!-- Ending of portfolio section -->
 
-			<div class="row">
-				
-				<div class="text-center">
-					<h2>Sed id turpis non nulla tincidunt lacinia.</h2>
-					<p>Sed lacinia, sem non tempor lobortis, neque dui commodo nulla, id maximus lorem sem a augue.</p>
-				</div>
+		<!-- Beginning of the contact/social section -->
+		<a id="contact-section" class="anchor"></a>
+		<div class="row bottom-padding" >
+			
+			<div class="text-center">
+				<h2>Sed id turpis non nulla tincidunt lacinia.</h2>
+				<p>Sed lacinia, sem non tempor lobortis, neque dui commodo nulla, id maximus lorem sem a augue.</p>
+			</div>
 
-				<!--Beginning of form section -->
-				<div class="col-md-6 col-sm-6 contact-col">
-					<form action="">
-						<div class="form-group">
-							<label for="contactNameField">Full Name</label>
-							<input type="text" class="form-control" id="contactNameField" placeholder="Your full name">
-						</div>
-						<div class="form-group">
-							<label for="contactMailField">E-mail</label>
-							<input type="email" class="form-control" id="contactMailField" placeholder="Your email address">
-						</div>
-						<div class="form-group">
-							<label for="contactMessageField">Message</label>
-							<textarea name="" class="form-control" id="contactMessageField" rows="10"></textarea>
-						</div>
-						<button type="submit" class="btn btn-default pull-right">Submit</button>
-					</form>
-				</div>
-				<!-- Ending of form section -->
-
-
-				<div class="col-md-5 col-sm-6 contact-col" id="parent-social">
-					<div id="child-social">
-						<h3 class="text-center">Sed id turpis non nulla tincidunt lacinia.</h3>
-						<p>Praesent ipsum massa, efficitur non scelerisque ac, ornare ac ipsum. Etiam placerat auctor lacinia. Duis luctus urna vitae congue volutpat. Etiam imperdiet semper turpis ac ultrices.</p>
-
-						<div id="social-icons" class="text-center">
-							<a href="#"><i class="fa fa-facebook-square"></i></a>
-							<a href="#"><i class="fa fa-linkedin-square"></i></a>
-							<a href="#"><i class="fa fa-github-square"></i></a>
-							<a href="#"><i class="fa fa-twitter-square"></i></a>
-						</div>
-
+			<!--Beginning of form section -->
+			<div class="col-md-6 col-sm-6 contact-col">
+				<form action="">
+					<div class="form-group">
+						<label for="contactNameField">Full Name</label>
+						<input type="text" class="form-control" id="contactNameField" placeholder="Your full name">
 					</div>
-				</div>
+					<div class="form-group">
+						<label for="contactMailField">E-mail</label>
+						<input type="email" class="form-control" id="contactMailField" placeholder="Your email address">
+					</div>
+					<div class="form-group">
+						<label for="contactMessageField">Message</label>
+						<textarea name="" class="form-control" id="contactMessageField" rows="10"></textarea>
+					</div>
+					<button type="submit" class="btn btn-default pull-right">Submit</button>
+				</form>
 			</div>
-		</div>        
+			<!-- Ending of form section -->
+
+			<!-- Beginning of the social section -->
+			<div class="col-md-5 col-sm-6 contact-col as-table">
+				<div class="as-table-cell">
+					<h3 class="text-center">Sed id turpis non nulla tincidunt lacinia.</h3>
+					<p>Praesent ipsum massa, efficitur non scelerisque ac, ornare ac ipsum. Etiam placerat auctor lacinia. Duis luctus urna vitae congue volutpat. Etiam imperdiet semper turpis ac ultrices.</p>
+
+					<div id="social-icons" class="text-center">
+						<a href="#"><i class="fa fa-facebook-square"></i></a>
+						<a href="#"><i class="fa fa-linkedin-square"></i></a>
+						<a href="#"><i class="fa fa-github-square"></i></a>
+						<a href="#"><i class="fa fa-twitter-square"></i></a>
+					</div>
+
+				</div>
+			</div> <!-- Ending of the contact/social section -->
+		</div> <!-- Ending of the contact/social section -->	
 	</div>
+
+	<footer id="footer">
+		<p class="text-center no-margins white-text">Developed by <a href="#">Arthur D. de Andrade</a>. Copyright &copy; 2017 - All Rights Reversed </p>
+	</footer>
 </body>
 </html>
