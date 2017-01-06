@@ -24,7 +24,7 @@
 .custom-lead {
   margin-bottom: 20px;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.4;
   margin: 0 0 0 0;
 }
@@ -36,6 +36,11 @@
 #profile-pic {
     width: 100%;
     max-width: 220px;
+}
+
+#portfolio-thumbnails {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #footer {
@@ -93,10 +98,12 @@ h1 {
 
 .text-bigger {
     font-size: 28px;
+    letter-spacing: 1px;
 }
 
 .text-big {
     font-size: 22px;
+    letter-spacing: 1px;
 }
 
 .bold {
